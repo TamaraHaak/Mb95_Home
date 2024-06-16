@@ -1,0 +1,9 @@
+h3 {
+    color: white;
+    position: relative;
+    height: 200px; 
+    overflow: hidden; 
+    line-height: 1.5;
+    margin-bottom: 50px;
+
+}
