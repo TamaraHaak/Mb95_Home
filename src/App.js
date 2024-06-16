@@ -18,29 +18,28 @@ function App() {
   useEffect(() => {
     let supportsPassive = false;
 
-    // Проверка поддержки пассивных слушателей событий в браузере
     try {
       const opts = Object.defineProperty({}, 'passive', {
         get() {
           supportsPassive = true;
+          return supportsPassive;
         }
       });
       window.addEventListener('test', null, opts);
     } catch (e) {
-      // Нет необходимости обрабатывать ошибку, supportsPassive останется false
+      // Обработка ошибок не требуется
     }
 
     const handleScroll = () => {
       // Логика обработки прокрутки
-      // Убедитесь, что здесь нет вызова setState или других изменений, вызывающих рендер
     };
 
     window.addEventListener('scroll', handleScroll, supportsPassive ? { passive: true } : false);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll, supportsPassive ? { passive: true } : false);
     };
-  }, []); // Пустой массив зависимостей гарантирует выполнение эффекта только один раз
+  }, []);
 
   return (
     <div>

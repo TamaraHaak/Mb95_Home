@@ -34,7 +34,7 @@ const Footer = forwardRef((props, ref) => {
         </div>
 
         <div className={s.map}>
-            <iframe src="https://www.google.com/maps/embed?place/Blumenstraße+51,+80336+M%C3%BCnchen/@48.1324765,11.5653369,17z/data=!3m1!4b1!4m6!3m5!1s0x479ddf5edda761cd:0xfd9bf1433decbda0!8m2!3d48.1324729!4d11.5679172!16s%2Fg%2F11ghng1fwp?hl=ru&entry=ttu"></iframe>
+            <iframe src="https://www.google.com/maps/embed?place/Blumenstraße+51,+80336+M%C3%BCnchen/@48.1324765,11.5653369,17z/data=!3m1!4b1!4m6!3m5!1s0x479ddf5edda761cd:0xfd9bf1433decbda0!8m2!3d48.1324729!4d11.5679172!16s%2Fg%2F11ghng1fwp?hl=ru&entry=ttu" title="Description of the iframe content"></iframe>
         </div>
     </footer>
   )
