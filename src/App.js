@@ -27,11 +27,11 @@ function App() {
       });
       window.addEventListener('test', null, opts);
     } catch (e) {
-      // Обработка ошибок не требуется
+      
     }
 
     const handleScroll = () => {
-      // Логика обработки прокрутки
+      
     };
 
     window.addEventListener('scroll', handleScroll, supportsPassive ? { passive: true } : false);
